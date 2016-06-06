@@ -1,0 +1,17 @@
+1- CORREGIDO.
+2- CORREGIDO.
+3- CORREGIDO.
+4- Habiamos quedado que no consultariamos la otra BDD porque igual hay que guardar los registros asi ya exista en la otra BDD, ya que en ese caso no podriamos crear registros en tablas que tenga relacion con cliente, por ejemplo LLAMADAS, como asociamos una llamada a un cliente si el cliente no existe en nuestra BDD ?, no se podria. Por eso habiamos quedado que se crearian todos los clientes asi existan
+5- Efectivametne al momento de crear un usuario seleccionas el cargo de ese usuario, el cual puede ser Operador, creas los cargos y luego se lo asignas al usuario. El campo de la foto lo voy a dejar de ultimo.
+6- Si, pero entonces no pediria la fecha de creacion del usuario, para eso la tomo automaticamente y ya.
+7- Si, le das un nombre al cargo y seleccionas que tipo de cargo es, si es Adminsitrador, Operador, Tecnico o Asesor.
+8- CORREGIDO.
+9:
+	-Cambiar llamada por cliente: No, porque las citas son en base a una llamada, si van a crear una cita ahi, hay que seleccionar la llamada, y la llamada esta asociada a un cliente. Lo que hice fue colocar un combo de las llamadas para que seleccione.
+	-El formulario no se, creo que le faltan campos por ejemplo la hora de atención, dirección y teléfono de contacto: Esos datos estan en la LLAMADA, no hace falta pedirlos ahi de nuevo.
+
+El logo editalo como tu lo prefieras y me lo pasas y yo lo monto.
+
+
+Falta:
+-Enviar el correo cuando crea la cita, y los reportes (que debo terminarlos esta semana).

@@ -1,0 +1,42 @@
+
+#w1-filters input{
+    width: auto !important;
+    height: auto !important;
+    padding: 0px !important;
+}
+
+#wi,
+section.content{
+    overflow: auto !important;
+}
+
+.skin-blue .main-header .navbar,
+.skin-blue .main-header .logo
+{
+    background-color: #fff !important;
+}
+
+.skin-blue .main-header .navbar .nav > li > a {
+    color: #000 !important;
+}
+
+.skin-blue .main-header li.user-header {
+    background-color: #DDD !important;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+    color: #000 !important;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle {
+    color: #000 !important;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background-color: #DDD !important;
+}
+
+.fc-center, .fc-right, .fc-day-header
+{
+    text-transform: uppercase;
+}
