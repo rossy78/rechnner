@@ -62,7 +62,7 @@
                                     'icon' => 'fa fa-plus',
                                     'url' => '#',
                                     'items' => [
-                                        ['label' => 'Tipos de Acciones', 'icon' => 'fa fa-gear', 'url' => ['/acciones-llamada'],],
+                                      //  ['label' => 'Tipos de Acciones', 'icon' => 'fa fa-gear', 'url' => ['/acciones-llamada'],],
                                         ['label' => 'Tipos de Llamadas', 'icon' => 'fa fa-gear', 'url' => ['/tipo-llamada'],],
                                         ['label' => 'Tipos de Solicitud', 'icon' => 'fa fa-gear', 'url' => ['/tipo-solicitud'],],
                                     ]
@@ -72,7 +72,7 @@
                                     'icon' => 'fa fa-plus',
                                     'url' => '#',
                                     'items' => [
-                                        ['label' => 'Estados', 'icon' => 'fa fa-gear', 'url' => ['/estado-cita'],],
+                                        ['label' => 'Status', 'icon' => 'fa fa-gear', 'url' => ['/estado-cita'],],
                                         ['label' => 'Tipos de Citas', 'icon' => 'fa fa-gear', 'url' => ['/tipo-cita'],],
                                     ]
                                 ],
@@ -91,7 +91,7 @@
                                 ['label' => 'Cargos', 'icon' => 'fa fa-gear', 'url' => ['/cargo'],],
                                 ['label' => 'Clientes', 'icon' => 'fa fa-gear', 'url' => ['/cliente'],],
                                 ['label' => 'Empresas', 'icon' => 'fa fa-gear', 'url' => ['/empresa'],],
-                                ['label' => 'Operadores', 'icon' => 'fa fa-gear', 'url' => ['/operador'],],
+                                //['label' => 'Operadores', 'icon' => 'fa fa-gear', 'url' => ['/operador'],],
                                 ['label' => 'Usuarios', 'icon' => 'fa fa-gear', 'url' => ['/usuario'],],
 //                                [
 //                                    'label' => '',

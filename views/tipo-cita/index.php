@@ -15,13 +15,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <h3><?= Html::encode($this->title) ?></h3>
+   <!-- <h3><?= Html::encode($this->title) ?></h3> -->
 
     <p> 
         <?=
         Html::button("Crear " . $this->title, [
             'value' => yii\helpers\Url::to(['tipo-cita/create']),
-            'title' => 'Creando Nuevo ' . $this->title,
+            'title' => 'Crear Tipo de Citas ',
             'class' => 'showModalButton btn btn-success'
         ])
         ?>
@@ -40,13 +40,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                            'title' => 'Ver '.$model->tipo_cita,
+                            'title' => 'Ver Tipos de citas',
                             'value' => yii\helpers\Url::to(['tipo-cita/view', 'id'=>$model->tipo_cita]),
                         ]);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                            'title' => 'Editar ' .$model->tipo_cita,
+                            'title' => 'Editar Tipos de Citas ',
                             'value' => yii\helpers\Url::to(['tipo-cita/update', 'id'=>$model->tipo_cita]),
                         ]); 
                     }

@@ -11,9 +11,9 @@ $this->title = 'Tipos Acciones Llamadas';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="acciones-llamada-index">
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php // echo $this->render('_search', ['model' <=> $searchModel]); ?>
 
-    <h3><?= Html::encode($this->title) ?></h3>
+   <!-- <h3><?= Html::encode($this->title) ?></h3>-->
 
     <p> 
         <?=
@@ -40,13 +40,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                            'title' => 'Ver '.$model->id_llamada,
+                            'title' => 'Ver acciones de llamadas',
                             'value' => yii\helpers\Url::to(['acciones-llamada/view', 'id'=>$model->id_llamada]),
                         ]);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                            'title' => 'Editar ' .$model->id_llamada,
+                            'title' => 'Editar acciones de llamadas ',
                             'value' => yii\helpers\Url::to(['acciones-llamada/update', 'id'=>$model->id_llamada]),
                         ]); 
                     }

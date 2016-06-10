@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tipo-llamada-index">
 
-    <h3><?= Html::encode($this->title) ?></h3>
+   <!-- <h3><?= Html::encode($this->title) ?></h3>-->
 
     <p> 
         <?=
@@ -37,13 +37,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                            'title' => 'Ver '.$model->tipo_llamada,
+                            'title' => 'Ver Tipo de llamadas',
                             'value' => yii\helpers\Url::to(['tipo-llamada/view', 'id'=>$model->tipo_llamada]),
                         ]);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                            'title' => 'Editar ' .$model->tipo_llamada,
+                            'title' => 'Editar Tipos de llamadas ',
                             'value' => yii\helpers\Url::to(['tipo-llamada/update', 'id'=>$model->tipo_llamada]),
                         ]); 
                     }

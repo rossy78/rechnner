@@ -35,13 +35,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                            'title' => 'Ver '.$model->sucursal,
+                            'title' => 'Ver Sucursal',
                             'value' => yii\helpers\Url::to(['sucursal/view', 'id'=>$model->sucursal]),
                         ]);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                            'title' => 'Editar ' .$model->sucursal,
+                            'title' => 'Editar Sucursal ',
                             'value' => yii\helpers\Url::to(['sucursal/update', 'id'=>$model->sucursal]),
                         ]); 
                     }

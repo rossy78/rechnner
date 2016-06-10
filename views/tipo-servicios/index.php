@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tipo-servicios-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+  <!--  <h1><?= Html::encode($this->title) ?></h1>-->
 
     <p> 
         <?=
@@ -37,13 +37,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                            'title' => 'Ver '.$model->tipo_servicio,
+                            'title' => 'Ver  Tipos de servicio',
                             'value' => yii\helpers\Url::to(['tipo-servicios/view', 'id'=>$model->tipo_servicio]),
                         ]);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                            'title' => 'Editar ' .$model->tipo_servicio,
+                            'title' => 'Editar Tipos de Servicios ' ,
                             'value' => yii\helpers\Url::to(['tipo-servicios/update', 'id'=>$model->tipo_servicio]),
                         ]); 
                     }

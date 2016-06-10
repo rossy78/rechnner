@@ -15,13 +15,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <h3><?= Html::encode($this->title) ?></h3>
+  <!--   <h3><?= Html::encode($this->title) ?></h3> -->
 
     <p> 
         <?=
-        Html::button("Crear " . $this->title, [
+        Html::button("Crear Pais ", [
             'value' => yii\helpers\Url::to(['pais/create']),
-            'title' => 'Creando Nuevo ' . $this->title,
+            'title' => 'Crear Nuevo Pais ',
             'class' => 'showModalButton btn btn-success'
         ])
         ?>
@@ -40,13 +40,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                            'title' => 'Ver '.$model->pais,
+                            'title' => 'Ver Pais '.$model->pais,
                             'value' => yii\helpers\Url::to(['pais/view', 'id'=>$model->pais]),
                         ]);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                            'title' => 'Editar ' .$model->pais,
+                            'title' => 'Editar  Pais' .$model->pais,
                             'value' => yii\helpers\Url::to(['pais/update', 'id'=>$model->pais]),
                         ]); 
                     }

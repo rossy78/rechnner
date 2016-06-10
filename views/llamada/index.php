@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <h3 ><?= Html::encode($this->title) ?></h3>
+   <!--- <h3 ><?= Html::encode($this->title) ?></h3>-->
 
     <p> 
         <?=

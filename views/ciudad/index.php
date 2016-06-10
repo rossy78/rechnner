@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\CiudadSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Ciudads';
+$this->title = 'Ciudad';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="ciudad-index">
@@ -37,13 +37,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                            'title' => 'Ver '.$model->ciudad,
+                            'title' => 'Ver  Ciudad',
                             'value' => yii\helpers\Url::to(['ciudad/view', 'id'=>$model->ciudad]),
                         ]);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                            'title' => 'Editar ' .$model->ciudad,
+                            'title' => 'Editar  Ciudad',
                             'value' => yii\helpers\Url::to(['ciudad/update', 'id'=>$model->ciudad]),
                         ]); 
                     }

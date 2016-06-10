@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?=
         Html::button("Crear " . $this->title, [
             'value' => yii\helpers\Url::to(['cita/create']),
-            'title' => 'Creando Nuevo ' . $this->title,
+            'title' => 'Nueva  Cita',
             'class' => 'showModalButton btn btn-success'
         ])
         ?>
@@ -89,13 +89,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                                    'title' => 'Ver ' . $model->id_cita,
+                                    'title' => 'Ver  Cita',
                                     'value' => yii\helpers\Url::to(['cita/view', 'id' => $model->id_cita]),
                         ]);
                     },
                             'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                                    'title' => 'Editar ' . $model->id_cita,
+                                    'title' => 'Editar Cita ' ,
                                     'value' => yii\helpers\Url::to(['cita/update', 'id' => $model->id_cita]),
                         ]);
                     }

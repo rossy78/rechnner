@@ -7,15 +7,15 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\EstadoCitaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Estado Citas';
+$this->title = 'Status Citas';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="estado-cita-index">
-    <h3><?= Html::encode($this->title) ?></h3>
+   <!-- <h3><?= Html::encode($this->title) ?></h3> -->
 
     <p> 
         <?=
-        Html::button("Crear Cargo", [
+        Html::button("Crear Status ", [
             'value' => yii\helpers\Url::to(['estado-cita/create']),
             'title' => 'Creando Nuevo Estado Cita',
             'class' => 'showModalButton btn btn-success'
@@ -34,13 +34,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                                    'title' => 'Ver ' . $model->estado_cita,
+                                    'title' => 'Ver status de Citas ',
                                     'value' => yii\helpers\Url::to(['estado-cita/view', 'id' => $model->estado_cita]),
                         ]);
                     },
                             'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                                    'title' => 'Editar ' . $model->estado_cita,
+                                    'title' => 'Editar Status de Citas',
                                     'value' => yii\helpers\Url::to(['estado-cita/update', 'id' => $model->estado_cita]),
                         ]);
                     }

@@ -11,7 +11,7 @@ $this->title = 'Cargos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="cargo-index">
-    <h3><?= Html::encode($this->title) ?></h3>
+  <!--  <h3><?= Html::encode($this->title) ?></h3>-->
 
     <p> 
         <?=
@@ -39,13 +39,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-eye-open"></span>', "#", [
-                            'title' => 'Ver '.$model->cargo,
+                            'title' => 'Ver  Cargo',
                             'value' => yii\helpers\Url::to(['cargo/view', 'id'=>$model->cargo]),
                         ]);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<span class="showModalLink glyphicon glyphicon-pencil"></span>', "#", [
-                            'title' => 'Editar ' .$model->cargo,
+                            'title' => 'Editar Cargo ',
                             'value' => yii\helpers\Url::to(['cargo/update', 'id'=>$model->cargo]),
                         ]); 
                     }
